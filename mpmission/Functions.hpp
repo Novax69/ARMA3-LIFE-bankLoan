@@ -6,7 +6,7 @@
     };
 
     class NovScript {
-        file = "NovScript";
+        file = "NovScript/bankLoan";
         class NovLoanMenu {};
         class NovBorrowLoan {};
 		class NovRepayLoan {};
