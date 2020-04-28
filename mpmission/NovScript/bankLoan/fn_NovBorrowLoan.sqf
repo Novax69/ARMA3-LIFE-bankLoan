@@ -10,11 +10,12 @@
 
 */
 
-private["_value","_percent","_borrowLimit","_aboveNb","_playerUID"];
+private["_value","_percent","_borrowLimit","_aboveNb","_playerUID","_interest"];
 
 _value = parseNumber(ctrlText 690103);
 _playerUID = getPlayerUID player;
 _borrowLimit = LIFE_SETTINGS(getNumber,"nov_loanAmmountLimit");
+_interest = LIFE_SETTINGS(getNumber,"nov_interestPercent");
 
 if (_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if (_value < 0) exitWith {}; 
@@ -30,7 +31,7 @@ if(_value > _borrowLimit) exitWith {
 
 BANK = BANK + _value;
 
-_percent = round(((_value) * 2)/100);
+_percent = round(((_value) * _interest)/100);
 
 _value = _value + _percent; //We add Interests of 2%
 
@@ -41,7 +42,5 @@ LOAN = LOAN + _value;
 
 hint format["Votre prêt s'élève à %1 €",[_value] call life_fnc_numberText];
 
-[] call life_fnc_livretAMenu; //To Edit
-
-
+[] call life_fnc_NovLoanMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync
