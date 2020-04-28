@@ -4,4 +4,5 @@ Add a loan system to the Arma 3 Life mod
 
 ### Credits :
 **Author :** Novax
+
 **Helper :** MysterFlyp
