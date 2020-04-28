@@ -19,7 +19,7 @@
 
 
 */
-private ["_uid","_side","_query","_queryResult","_tickTime","_tmp"];
+private ["_uid","_side","_query","_queryResult","_tickTime","_tmp","_life_loan"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _side = [_this,1,sideUnknown,[civilian]] call BIS_fnc_param;
 _ownerID = [_this,2,objNull,[objNull]] call BIS_fnc_param;
@@ -33,12 +33,12 @@ if (LIFE_SETTINGS(getNumber,"player_deathLog") isEqualTo 1) then {
 _ownerID = owner _ownerID;
 
 _query = switch (_side) do {
-    // West - 11 entries returned
-    case west: {format ["SELECT pid, name, cash, bankacc, adminlevel, donorlevel, cop_licenses, coplevel, cop_gear, blacklist, cop_stats, playtime FROM players WHERE pid='%1'",_uid];};
-    // Civilian - 12 entries returned
-    case civilian: {format ["SELECT pid, name, cash, bankacc, adminlevel, donorlevel, civ_licenses, arrested, civ_gear, civ_stats, civ_alive, civ_position, playtime FROM players WHERE pid='%1'",_uid];};
-    // Independent - 10 entries returned
-    case independent: {format ["SELECT pid, name, cash, bankacc, adminlevel, donorlevel, med_licenses, mediclevel, med_gear, med_stats, playtime FROM players WHERE pid='%1'",_uid];};
+    // West - 12 entries returned
+    case west: {format ["SELECT pid, name, cash, bankacc, adminlevel, donorlevel, cop_licenses, coplevel, cop_gear, blacklist, cop_stats, playtime, loan FROM players WHERE pid='%1'",_uid];};
+    // Civilian - 13 entries returned
+    case civilian: {format ["SELECT pid, name, cash, bankacc, adminlevel, donorlevel, civ_licenses, arrested, civ_gear, civ_stats, civ_alive, civ_position, playtime, loan FROM players WHERE pid='%1'",_uid];};
+    // Independent - 11 entries returned
+    case independent: {format ["SELECT pid, name, cash, bankacc, adminlevel, donorlevel, med_licenses, mediclevel, med_gear, med_stats, playtime, loan FROM players WHERE pid='%1'",_uid];};
 };
 
 _tickTime = diag_tickTime;
@@ -84,6 +84,7 @@ _new = [(_queryResult select 8)] call DB_fnc_mresToArray;
 if (_new isEqualType "") then {_new = call compile format ["%1", _new];};
 _queryResult set[8,_new];
 //Parse data for specific side.
+
 switch (_side) do {
     case west: {
         _queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
@@ -105,6 +106,9 @@ switch (_side) do {
             TON_fnc_playtime_values_request pushBack [_uid, _new];
         };
         [_uid,_new select 0] call TON_fnc_setPlayTime;
+
+        _life_loan = _queryResult select 12;
+        _queryResult set[12,([_life_loan] call DB_fnc_numberSafe)]; 
     };
 
     case civilian: {
@@ -134,6 +138,9 @@ switch (_side) do {
         };
         [_uid,_new select 2] call TON_fnc_setPlayTime;
 
+        _life_loan = _queryResult select 13;
+        _queryResult set[13,([_life_loan] call DB_fnc_numberSafe)]; 
+
         /* Make sure nothing else is added under here */
         _houseData = _uid spawn TON_fnc_fetchPlayerHouses;
         waitUntil {scriptDone _houseData};
@@ -162,6 +169,9 @@ switch (_side) do {
             TON_fnc_playtime_values_request pushBack [_uid, _new];
         };
         [_uid,_new select 1] call TON_fnc_setPlayTime;
+
+        _life_loan = _queryResult select 11;
+        _queryResult set[11,([_life_loan] call DB_fnc_numberSafe)]; 
     };
 };
 
