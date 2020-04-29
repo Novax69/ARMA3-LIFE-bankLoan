@@ -10,12 +10,19 @@
 
 */
 
-private["_value","_percent","_borrowLimit","_aboveNb","_playerUID","_interest"];
+private["_value","_percent","_borrowLimit","_aboveNb","_playerUID","_interest","_useDonorLever","_donatorLevel"];
 
 _value = parseNumber(ctrlText 690103);
 _playerUID = getPlayerUID player;
 _borrowLimit = LIFE_SETTINGS(getNumber,"nov_loanAmmountLimit");
 _interest = LIFE_SETTINGS(getNumber,"nov_interestPercent");
+_useDonorLevel = LIFE_SETTINGS(getNumber,"nov_useDonator");
+
+
+if(_useDonorLevel isEqualTo 1) then {
+   _donatorLevel = FETCH_CONST(life_donorlevel);
+   _interest = _interest - (_donatorLevel * 1); 
+};
 
 if (_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if (_value < 0) exitWith {}; 
@@ -33,7 +40,7 @@ BANK = BANK + _value;
 
 _percent = round(((_value) * _interest)/100);
 
-_value = _value + _percent; //We add Interests of 2%
+_value = _value + _percent;
 
 
 LOAN = LOAN + _value;
