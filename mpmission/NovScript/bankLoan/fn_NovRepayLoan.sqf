@@ -32,7 +32,7 @@ LOAN = LOAN - _value;
 
 
 
-hint format["Tu as bien remboursé %1 € de ton prêt",[_value] call life_fnc_numberText];
+hint format["Tu as remboursé ton prêt de %1 €",[_value] call life_fnc_numberText];
 
 [] call life_fnc_NovLoanMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync
