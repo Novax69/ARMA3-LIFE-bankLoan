@@ -28,7 +28,7 @@ if(_value > LOAN) exitWith {
 BANK = BANK - _value;
 LOAN = LOAN - _value;
 
-[_playerUID,LIVREA] remoteExecCall ["DB_fnc_updateLivreA",RSERV];
+[_playerUID,LOAN] remoteExecCall ["DB_fnc_updateLoan",RSERV];
 
 
 
