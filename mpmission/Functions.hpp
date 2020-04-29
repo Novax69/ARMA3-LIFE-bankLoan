@@ -3,7 +3,7 @@ class Life_Client_Core {
     tag = "life";
 
     //Add inside this class Here
-    class NovScript {
+    class NovScriptLoan {
         file = "NovScript\bankLoan";
         class NovLoanMenu {};
         class NovBorrowLoan {};
