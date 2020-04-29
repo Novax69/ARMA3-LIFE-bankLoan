@@ -31,7 +31,7 @@ if(LOAN > 0) then {
 };
 
 
-CONTROL(690100,690102) ctrlSetStructuredText parseText format ["<img size='1.7' image='icons\ico_bank.paa'/> $%1<br/><img size='1.6' image='icons\ico_money.paa'/> $%2",[LIVREA] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+CONTROL(690100,690102) ctrlSetStructuredText parseText format ["<img size='1.7' image='icons\ico_bank.paa'/> $%1<br/><img size='1.6' image='icons\ico_money.paa'/> $%2",[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
 
 if(LOAN isEqualTo 0) then {
 	CONTROL(690100,690104) ctrlSetStructuredText parseText format ["Vous n'avez pas de prêt en cours"];
