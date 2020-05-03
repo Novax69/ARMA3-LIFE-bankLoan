@@ -3,111 +3,111 @@
 --> 
         <Key ID="STR_NOV_loan_TitleMenu">
             <Original>Loan Management</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Emprunt bancaire</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_RepayButton">
             <Original>Repay Loan</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Rembourser prêt</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_BorrowButton">
             <Original>Borrow</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Emprunter</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_BorrowLimit">
             <Original>Borrow limit is %1$, you asked %2$ above this limit</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>La limite est de %1€, tu as demandé %2 € de trop</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_LoanAmmount">
             <Original>Your loan is %1$</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Votre prêt s'élève à %1€</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_NoLoan">
             <Original>You have no loan active !</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Vous n'avez pas de prêt en cours</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_ActiveLoan">
             <Original>You loan is at %1$</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Votre prêt s'élève à %1€</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_InterestPercent">
             <Original>Loan interest : %1%2</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Le taux d'intérêt actuel s'élève à %1%2</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_RepayAbove">
             <Original>You only have %1$ to repay, you tried to give %2$ more</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Tu dois seulement remboursé %1€, tu as donné %2 € de trop</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
         <Key ID="STR_NOV_loan_RepaySuccess">
             <Original>You successfully paid %1$ to repay your loan</Original>
-            <Czech>TO EDIT => LIVRET A</Czech>
-            <Spanish>TO EDIT => LIVRET A</Spanish>
-            <Russian>TO EDIT => LIVRET A</Russian>
-            <German>TO EDIT => LIVRET A</German>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
             <French>Tu as remboursé ton prêt de %1 €</French>
-            <Italian>TO EDIT => LIVRET A</Italian>
-            <Portuguese>TO EDIT => LIVRET A</Portuguese>
-            <Polish>TO EDIT => LIVRET A</Polish>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
         </Key>
