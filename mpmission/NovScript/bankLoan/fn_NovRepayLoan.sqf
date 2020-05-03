@@ -22,7 +22,7 @@ if (!([str(_value)] call TON_fnc_isnumber)) exitWith {hint localize "STR_ATM_not
 if (_value > BANK) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 if(_value > LOAN) exitWith {
     _aboveNb = _value - LOAN; // Dit de combien c'est dépassé
-    hint format["Tu dois seulement remboursé %1€, tu as donné %2 € de trop",[LOAN] call life_fnc_numberText,[_aboveNb] call life_fnc_numberText];
+    hint format[localize "STR_NOV_loan_RepayAbove",[LOAN] call life_fnc_numberText,[_aboveNb] call life_fnc_numberText];
 };
 
 BANK = BANK - _value;
@@ -32,7 +32,7 @@ LOAN = LOAN - _value;
 
 
 
-hint format["Tu as remboursé ton prêt de %1 €",[_value] call life_fnc_numberText];
+hint format[localize "STR_NOV_loan_RepaySuccess",[_value] call life_fnc_numberText];
 
 [] call life_fnc_NovLoanMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync

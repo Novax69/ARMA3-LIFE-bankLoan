@@ -18,7 +18,7 @@ class Life_loan_management {
         class Life_RscTitleBackground: Life_RscText {
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = 690101;
-			text = "Emprunt Bancaire";
+			text = "$STR_NOV_loan_TitleMenu";
 			x = 0.31625 * safezoneW + safezoneX;
 			y = 0.2312 * safezoneH + safezoneY;
 			w = 0.328125 * safezoneW;
@@ -68,7 +68,7 @@ class Life_loan_management {
 		{
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = 690105;
-			text = "Emprunter";
+			text = "$STR_NOV_loan_BorrowButton";
 			onButtonClick = "[] call life_fnc_NovBorrowLoan";
 			x = 0.5 * safezoneW + safezoneX;
 			y = 0.458 * safezoneH + safezoneY;
@@ -79,7 +79,7 @@ class Life_loan_management {
 		{
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = 690106;
-			text = "Rembourser";
+			text = "$STR_NOV_loan_RepayButton";
 			onButtonClick = "[] call life_fnc_NovRepayLoan";
 			x = 0.5 * safezoneW + safezoneX;
 			y = 0.5056 * safezoneH + safezoneY;

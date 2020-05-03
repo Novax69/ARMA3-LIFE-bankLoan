@@ -37,9 +37,9 @@ if(LOAN > 0) then {
 CONTROL(690100,690102) ctrlSetStructuredText parseText format ["<img size='1.7' image='icons\ico_bank.paa'/> $%1<br/><img size='1.6' image='icons\ico_money.paa'/> $%2",[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
 
 if(LOAN isEqualTo 0) then {
-	CONTROL(690100,690104) ctrlSetStructuredText parseText format ["Vous n'avez pas de prêt en cours"];
+	CONTROL(690100,690104) ctrlSetStructuredText parseText format [localize "STR_NOV_loan_NoLoan"];
 } else {
-	CONTROL(690100,690104) ctrlSetStructuredText parseText format ["Votre prêt restant s'élève à %1€",[LOAN] call life_fnc_numberText];
+	CONTROL(690100,690104) ctrlSetStructuredText parseText format [localize "STR_NOV_loan_ActiveLoan",[LOAN] call life_fnc_numberText];
 };
 
 if(_useDonorLevel isEqualTo 1) then {
@@ -47,5 +47,5 @@ if(_useDonorLevel isEqualTo 1) then {
 	_interest = _interest - (_donorLevel * 1);
 };
 
-CONTROL(690100,690107) ctrlSetStructuredText parseText format ["Le taux d'intérêt actuel s'élève à %1%2",[_interest] call life_fnc_numberText, "%"];
+CONTROL(690100,690107) ctrlSetStructuredText parseText format [localize "STR_NOV_loan_InterestPercent",[_interest] call life_fnc_numberText, "%"];
 

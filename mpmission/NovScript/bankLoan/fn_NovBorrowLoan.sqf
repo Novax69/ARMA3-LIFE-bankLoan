@@ -30,7 +30,7 @@ if (!([str(_value)] call TON_fnc_isnumber)) exitWith {hint localize "STR_ATM_not
 if (_value > BANK) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 if(_value > _borrowLimit) exitWith {
    _aboveNb = _value - _borrowLimit; // Dit de combien c'est dépassé
-    hint format["La limite est de %1€, tu as demandé %2 € de trop",[_borrowLimit] call life_fnc_numberText,[_aboveNb] call life_fnc_numberText];
+    hint format[localize "STR_NOV_loan_BorrowLimit",[_borrowLimit] call life_fnc_numberText,[_aboveNb] call life_fnc_numberText];
 
 };
 
@@ -47,7 +47,7 @@ LOAN = LOAN + _value;
 
 [_playerUID,LOAN] remoteExecCall ["DB_fnc_updateLoan",RSERV];
 
-hint format["Votre prêt s'élève à %1 €",[_value] call life_fnc_numberText];
+hint format[localize "STR_NOV_loan_LoanAmmount",[_value] call life_fnc_numberText];
 
 [] call life_fnc_NovLoanMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync
