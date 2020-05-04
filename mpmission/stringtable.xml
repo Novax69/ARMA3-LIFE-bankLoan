@@ -111,3 +111,14 @@
             <Portuguese>TO EDIT => LOAN</Portuguese>
             <Polish>TO EDIT => LOAN</Polish>
         </Key>
+        <Key ID="STR_FSM_ReceivedPay_Loan">
+            <Original>You have received a paycheck of $%1 but $%2 has been taken to repay your loan.</Original>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
+            <French>Vous avez reçu votre paye de %1€, mais %2€ ont été prélevé pour rembourser votre prêt.</French>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN<Polish>
+        </Key>
