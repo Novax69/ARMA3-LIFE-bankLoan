@@ -42,7 +42,7 @@ Certains fichiers sont à remplacer (life_server/Functions/MySQL/fn_queryRequest
 **Proposé par :** MysterFlyp
 
 
-### Support :
+### Donation :
 
 Vous pouvez aider en faisant un don pour m'inciter à en coder plus à l'avenir :
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/novax69)
