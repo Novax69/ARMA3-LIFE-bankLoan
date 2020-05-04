@@ -2,6 +2,7 @@
 # ENG : ARMA3-LIFE-bankLoan
 Add a loan system to the Arma 3 Life mod
 
+the repay is manual (made by the player) or automatic (ammount taken from the paycheck)
 
 ## Important informations : 
 
