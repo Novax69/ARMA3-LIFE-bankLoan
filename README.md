@@ -14,7 +14,7 @@ Some files are to replace (life_server/Function/MySQL/fn_queryRequest for exampl
 ### Credits :
 **Author :** Novax
 
-**Made With :** MysterFlyp
+**Asked by :** MysterFlyp
 
 
 ### Support :
