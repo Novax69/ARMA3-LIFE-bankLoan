@@ -8,6 +8,7 @@ class Life_Client_Core {
         class NovLoanMenu {};
         class NovBorrowLoan {};
 		class NovRepayLoan {};
+        class NovAutomaticRepay {};
 
     };
 };

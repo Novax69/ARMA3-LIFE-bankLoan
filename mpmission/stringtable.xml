@@ -111,13 +111,24 @@
             <Portuguese>TO EDIT => LOAN</Portuguese>
             <Polish>TO EDIT => LOAN</Polish>
         </Key>
-        <Key ID="STR_FSM_ReceivedPay_Loan">
-            <Original>You have received a paycheck of $%1 but $%2 has been taken to repay your loan.</Original>
+        <Key ID="STR_NOV_Loan_RepaidPaycheckNormal">
+            <Original>$%1 has been taken out of your paycheck to pay your Loan, Actual Loan : $%2 </Original>
             <Czech>TO EDIT => LOAN</Czech>
             <Spanish>TO EDIT => LOAN</Spanish>
             <Russian>TO EDIT => LOAN</Russian>
             <German>TO EDIT => LOAN</German>
-            <French>Vous avez reçu votre paye de %1€, mais %2€ ont été prélevé pour rembourser votre prêt.</French>
+            <French>%1€ à été pris de ta paye pour payer ton emprunt, prêt restant : %2€</French>
+            <Italian>TO EDIT => LOAN</Italian>
+            <Portuguese>TO EDIT => LOAN</Portuguese>
+            <Polish>TO EDIT => LOAN</Polish>
+        </Key>
+        <Key ID="STR_NOV_Loan_RepaidPaycheckFinished">
+            <Original>$%1 has been taken out of your paycheck to pay your Loan, You have no loan left </Original>
+            <Czech>TO EDIT => LOAN</Czech>
+            <Spanish>TO EDIT => LOAN</Spanish>
+            <Russian>TO EDIT => LOAN</Russian>
+            <German>TO EDIT => LOAN</German>
+            <French>%1€ à été pris de ta paye pour payer ton emprunt, ton prêt a été entièrement remboursé</French>
             <Italian>TO EDIT => LOAN</Italian>
             <Portuguese>TO EDIT => LOAN</Portuguese>
             <Polish>TO EDIT => LOAN</Polish>
