@@ -31,7 +31,7 @@ while { LOAN > 0 } do {
 	if(LOAN - _percent >= 0 ) then {
 		BANK = BANK - _percent;
 		LOAN = LOAN - _percent;
-		systemChat format [local "STR_NOV_Loan_RepaidPaycheckNormal",[_percent] call life_fnc_numberText,[LOAN] call life_fncnumberText];
+		systemChat format [local "STR_NOV_Loan_RepaidPaycheckNormal",[_percent] call life_fnc_numberText,[LOAN] call life_fnc_numberText];
 	} else {
 		BANK = BANK - _percent;
 		_aboveNb = _percent - LOAN;
